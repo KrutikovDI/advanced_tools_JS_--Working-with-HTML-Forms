@@ -1,0 +1,64 @@
+.button-conteiner {
+  display: flex;
+  width: 400px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  color: aliceblue;
+  background-color: rgb(251, 28, 28);
+  border-color:  rgb(251, 28, 28);
+  border-radius: 5px;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  position: relative;
+}
+
+.button:hover {
+  background-color:  rgb(166, 13, 13);
+  border-color: rgb(166, 13, 13);
+}
+
+.tooltip-conteiner {
+  width: 300px;
+  height: auto;
+  border: solid 1px rgb(196, 196, 196);
+  border-radius: 5px;
+  position: relative;
+  position: absolute;
+}
+
+.popover-title {
+margin: 0px;
+padding: 7px;
+border-bottom: solid 1px rgb(196, 196, 196);
+background-color: rgb(233, 233, 233);
+}
+
+.popover-content {
+  padding: 7px;
+}
+
+.tooltip-conteiner:after, .tooltip-conteiner:before {
+	content: ""; 
+	border: solid transparent;
+	position: absolute;
+ 	top: 100%;
+	left: 50%;
+  
+}
+.tooltip-conteiner:after {
+	border-top-color: white;
+	border-width: 8px;
+	margin-left: -8px;
+}
+.tooltip-conteiner:before {
+	border-top-color: rgb(196, 196, 196);
+	border-width: 9px;
+	margin-left: -9px;
+}
