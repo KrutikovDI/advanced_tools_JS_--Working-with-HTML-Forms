@@ -18,11 +18,11 @@ describe ('проверка появления подсказки', () => {
   test('наводим курсор на кнопку', async () => {
     await page.goto('http://localhost:8080');
 
-    await page.waitForSelector('.card-conteiner');
+    await page.waitForSelector('.button-conteiner');
 
     const button = await page.$('.button');
 
-    await button.focus();
+    await button.hover();
 
     await page.waitForSelector('.tooltip-conteiner');
   });
